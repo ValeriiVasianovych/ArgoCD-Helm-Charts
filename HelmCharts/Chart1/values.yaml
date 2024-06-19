@@ -10,6 +10,6 @@ label:
 namespace: default
 
 image:
-  name: httpd
+  name: nginx
   tag: latest
   
