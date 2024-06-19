@@ -10,6 +10,6 @@ label:
 namespace: default
 
 image:
-  name: nginx
-  tag: latest
+  name: valeriivasianovych/nodejs-app
+  tag: v1
   
