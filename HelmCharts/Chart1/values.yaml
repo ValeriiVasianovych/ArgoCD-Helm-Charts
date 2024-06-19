@@ -1,0 +1,15 @@
+names:
+  metaName   : nginx-web-service
+  appName    : nginx-web
+  hpaName    : nginx-web-hpa
+  serviceName: nginx-web-service
+
+label:
+  env: default
+
+namespace: default
+
+image:
+  name: httpd
+  tag: latest
+  
