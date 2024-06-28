@@ -5,11 +5,12 @@ names:
   serviceName: nginx-web-service
 
 label:
-  env: default
+  env  : default
+  owner: Valerii-Vasianovych
 
 namespace: default
 
 image:
   name: nginx
-  tag: latest
+  tag : latest
   

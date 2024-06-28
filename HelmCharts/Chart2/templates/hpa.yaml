@@ -4,15 +4,18 @@ metadata:
   name: {{ .Values.names.hpaName }}
   namespace: {{ .Values.namespace }}
   labels:
-    owner: {{ .Values.label.owner}}
+    owner: {{ .Values.label.owner }}
     env: {{ .Values.label.env }}
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
     name: {{ .Values.names.metaName }}
-  minReplicas: 4
-  maxReplicas: 8
+  minReplicas: 2
+  maxReplicas: 4
   metrics:
     - type: Resource
       resource:

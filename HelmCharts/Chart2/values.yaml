@@ -1,0 +1,15 @@
+names:
+  metaName   : spring-app-service
+  appName    : spring-boot-app
+  hpaName    : spring-app-hpa
+  serviceName: spring-app-service
+
+label:
+  owner: Valerii-Vasianovych
+  env  : default
+
+namespace: application
+
+image:
+  name: valeriivasianovych/spring-boot-app
+  tag : latest
