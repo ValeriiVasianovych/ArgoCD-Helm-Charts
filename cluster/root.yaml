@@ -10,7 +10,7 @@ spec:
     name     : in-cluster
     namespace: argocd
   source:
-    path   : "cluster/applications/app2.yaml"
+    path   : "cluster/applications/springbootapp"
     repoURL: "git@github.com:ValeriiVasianovych/ArgoCD-Helm-Charts.git"
     targetRevision: HEAD
   project: default
